@@ -1,0 +1,49 @@
+body{
+  
+  text-align:center;
+color:#3949AB;
+background-color:#212121;
+  
+} 
+
+img{ 
+width:500px;
+  border:10px;
+  border-color:#00695C;
+  
+}
+
+.link{
+   
+    float:left;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:9px;
+    padding-right:9px;
+    font-family:fantasy;
+    font-size:20px;
+}
+h5{
+  
+  font-size:25px;
+
+}
+
+h6{
+  
+  font-size:25px;
+}
+
+h2{
+  
+  text-align:center;
+  
+}
+
+h7{
+  
+  font-size:25px;
+  
+}
+  
+  
