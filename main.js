@@ -1,31 +1,56 @@
-name_of_the_person_array = [];
+var canvas = new fabric.Canvas('myCanvas')
 
 
-function submit()
+block_image_width = 30;
+block_image_height = 30;
+
+player_x = 10;
+player_y = 10;
+
+
+
+var blayer_object="";
+
+
+
+function player_update()
 {
 
 
+fabric.Image.fromURL("player.png", function(Img) {
+player_object = Img;
 
-    var name_1 = document.getElementById("1").value;
-    var name_2 = document.getElementById("2").value;
-  
+player_object.scaleTowWidth(150);
+player_object.scaleToHeight(140);
+player_object.set({
+top:player_y,
+left:player_x
+});
+canvas.add(player_object);
 
-    name_of_the_studnt_array.push(name_1);
-    name_of_the_studnt_array.push(name_2);
-  
-    console.log(name_of_the_person_array);
+});
 
-    document.getElementById("diplay_name").innerHTML = name_of_the_person_array;
-    document.getElementById("submit_button").style.display = none;
-    document.getElementById("sort_button").style.display = "inline-block";
 
 }
 
 
-function sorting()
+function new_image(get_image)
 {
 
-name_of_the_student_array.sort();
-console.log(name_of_the_person_array)
-document.getElementById("diplay_name").innerHTML = name_of_the_person_array;
+
+    fabric.Image.fromURL(get_image, function(Img) {
+        block_image_object = Img;
+        
+        block_image_object.scaleTowWidth(block_image_width);
+        block_image_object.scaleToHeight(block_image_height);
+        block_image_object.set({
+        top:player_y,
+        left:player_x
+        });
+        canvas.add(block_image_object);
+        
+        });
+        
+
+
 }

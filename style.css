@@ -1,60 +1,41 @@
-body{
-  
-  text-align:center;
-color:#3949AB;
-background-color:#66BB6A;
-  
-} 
-
-img{ 
-width:500px;
-  border:10px;
-  border-color:#00695C;
-  
+.body_background 
+{
+    background-image: url("https://i.ytimg.com/vi/Dg0IjOzopYU/maxresdefault.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+    border-width:10px;
+    background-color: white; 
+    border-style:ridge;
 }
 
-.link{
-   
-    float:left;
-    padding-top:5px;
-    padding-bottom:5px;
-    padding-left:9px;
-    padding-right:9px;
-    font-family:fantasy;
-    font-size:20px;
+h2
+{
+	border-radius: 10px;
+	width: 200px;
+	padding: 5px;
+ }
+h3
+{
+	display: inline-block;
 }
-h5{
-  
-  font-size:25px;
-
+span
+{
+	color: black;	
 }
-
-h6{
-  
-  font-size:25px;
+a
+{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+    float: left;
+    border-radius: 10px;
 }
-
-h2{
-  
-  text-align:center;
-  
-}
-
-h7{
-  
-  font-size:25px;
-  
-}
-  
-h9{
-
-font-size:25px
-  
-}
-
-h10{
-  
-  
- font-size:25px; 
-  
+#head_info
+{
+	width: 600px;
+	border-radius: 10px;
+	margin-bottom: 10px;
 }
